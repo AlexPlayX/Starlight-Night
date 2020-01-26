@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA841FA723DDCAFC00B73452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FA623DDCAFC00B73452 /* AppDelegate.swift */; };
+		FA841FA923DDCAFC00B73452 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FA823DDCAFC00B73452 /* GameScene.sks */; };
+		FA841FAB23DDCAFC00B73452 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FAA23DDCAFC00B73452 /* Actions.sks */; };
+		FA841FAD23DDCAFC00B73452 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FAC23DDCAFC00B73452 /* GameScene.swift */; };
+		FA841FAF23DDCAFC00B73452 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FAE23DDCAFC00B73452 /* GameViewController.swift */; };
+		FA841FB223DDCAFC00B73452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB023DDCAFC00B73452 /* Main.storyboard */; };
+		FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB323DDCAFE00B73452 /* Assets.xcassets */; };
+		FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */; };
+		FA841FC223DDCAFE00B73452 /* Starlight_NightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FC123DDCAFE00B73452 /* Starlight_NightTests.swift */; };
+		FA841FCD23DDCAFE00B73452 /* Starlight_NightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FCC23DDCAFE00B73452 /* Starlight_NightUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA841FBE23DDCAFE00B73452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA841F9B23DDCAFC00B73452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA841FA223DDCAFC00B73452;
+			remoteInfo = "Starlight Night";
+		};
+		FA841FC923DDCAFE00B73452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA841F9B23DDCAFC00B73452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA841FA223DDCAFC00B73452;
+			remoteInfo = "Starlight Night";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA841FA323DDCAFC00B73452 /* Starlight Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starlight Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA841FA623DDCAFC00B73452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA841FA823DDCAFC00B73452 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FA841FAA23DDCAFC00B73452 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		FA841FAC23DDCAFC00B73452 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FA841FAE23DDCAFC00B73452 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA841FB123DDCAFC00B73452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA841FB323DDCAFE00B73452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA841FB623DDCAFE00B73452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA841FB823DDCAFE00B73452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA841FBD23DDCAFE00B73452 /* Starlight NightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Starlight NightTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA841FC123DDCAFE00B73452 /* Starlight_NightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starlight_NightTests.swift; sourceTree = "<group>"; };
+		FA841FC323DDCAFE00B73452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA841FC823DDCAFE00B73452 /* Starlight NightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Starlight NightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA841FCC23DDCAFE00B73452 /* Starlight_NightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starlight_NightUITests.swift; sourceTree = "<group>"; };
+		FA841FCE23DDCAFE00B73452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA841FA023DDCAFC00B73452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FBA23DDCAFE00B73452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FC523DDCAFE00B73452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA841F9A23DDCAFC00B73452 = {
+			isa = PBXGroup;
+			children = (
+				FA841FA523DDCAFC00B73452 /* Starlight Night */,
+				FA841FC023DDCAFE00B73452 /* Starlight NightTests */,
+				FA841FCB23DDCAFE00B73452 /* Starlight NightUITests */,
+				FA841FA423DDCAFC00B73452 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA841FA423DDCAFC00B73452 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA841FA323DDCAFC00B73452 /* Starlight Night.app */,
+				FA841FBD23DDCAFE00B73452 /* Starlight NightTests.xctest */,
+				FA841FC823DDCAFE00B73452 /* Starlight NightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA841FA523DDCAFC00B73452 /* Starlight Night */ = {
+			isa = PBXGroup;
+			children = (
+				FA841FA623DDCAFC00B73452 /* AppDelegate.swift */,
+				FA841FA823DDCAFC00B73452 /* GameScene.sks */,
+				FA841FAA23DDCAFC00B73452 /* Actions.sks */,
+				FA841FAC23DDCAFC00B73452 /* GameScene.swift */,
+				FA841FAE23DDCAFC00B73452 /* GameViewController.swift */,
+				FA841FB023DDCAFC00B73452 /* Main.storyboard */,
+				FA841FB323DDCAFE00B73452 /* Assets.xcassets */,
+				FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */,
+				FA841FB823DDCAFE00B73452 /* Info.plist */,
+			);
+			path = "Starlight Night";
+			sourceTree = "<group>";
+		};
+		FA841FC023DDCAFE00B73452 /* Starlight NightTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA841FC123DDCAFE00B73452 /* Starlight_NightTests.swift */,
+				FA841FC323DDCAFE00B73452 /* Info.plist */,
+			);
+			path = "Starlight NightTests";
+			sourceTree = "<group>";
+		};
+		FA841FCB23DDCAFE00B73452 /* Starlight NightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA841FCC23DDCAFE00B73452 /* Starlight_NightUITests.swift */,
+				FA841FCE23DDCAFE00B73452 /* Info.plist */,
+			);
+			path = "Starlight NightUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA841FA223DDCAFC00B73452 /* Starlight Night */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA841FD123DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight Night" */;
+			buildPhases = (
+				FA841F9F23DDCAFC00B73452 /* Sources */,
+				FA841FA023DDCAFC00B73452 /* Frameworks */,
+				FA841FA123DDCAFC00B73452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Starlight Night";
+			productName = "Starlight Night";
+			productReference = FA841FA323DDCAFC00B73452 /* Starlight Night.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA841FBC23DDCAFE00B73452 /* Starlight NightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA841FD423DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight NightTests" */;
+			buildPhases = (
+				FA841FB923DDCAFE00B73452 /* Sources */,
+				FA841FBA23DDCAFE00B73452 /* Frameworks */,
+				FA841FBB23DDCAFE00B73452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA841FBF23DDCAFE00B73452 /* PBXTargetDependency */,
+			);
+			name = "Starlight NightTests";
+			productName = "Starlight NightTests";
+			productReference = FA841FBD23DDCAFE00B73452 /* Starlight NightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA841FC723DDCAFE00B73452 /* Starlight NightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA841FD723DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight NightUITests" */;
+			buildPhases = (
+				FA841FC423DDCAFE00B73452 /* Sources */,
+				FA841FC523DDCAFE00B73452 /* Frameworks */,
+				FA841FC623DDCAFE00B73452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA841FCA23DDCAFE00B73452 /* PBXTargetDependency */,
+			);
+			name = "Starlight NightUITests";
+			productName = "Starlight NightUITests";
+			productReference = FA841FC823DDCAFE00B73452 /* Starlight NightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA841F9B23DDCAFC00B73452 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "it-Business-Partner";
+				TargetAttributes = {
+					FA841FA223DDCAFC00B73452 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FA841FBC23DDCAFE00B73452 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FA841FA223DDCAFC00B73452;
+					};
+					FA841FC723DDCAFE00B73452 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FA841FA223DDCAFC00B73452;
+					};
+				};
+			};
+			buildConfigurationList = FA841F9E23DDCAFC00B73452 /* Build configuration list for PBXProject "Starlight Night" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA841F9A23DDCAFC00B73452;
+			productRefGroup = FA841FA423DDCAFC00B73452 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA841FA223DDCAFC00B73452 /* Starlight Night */,
+				FA841FBC23DDCAFE00B73452 /* Starlight NightTests */,
+				FA841FC723DDCAFE00B73452 /* Starlight NightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA841FA123DDCAFC00B73452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA841FB223DDCAFC00B73452 /* Main.storyboard in Resources */,
+				FA841FA923DDCAFC00B73452 /* GameScene.sks in Resources */,
+				FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */,
+				FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */,
+				FA841FAB23DDCAFC00B73452 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FBB23DDCAFE00B73452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FC623DDCAFE00B73452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA841F9F23DDCAFC00B73452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA841FAD23DDCAFC00B73452 /* GameScene.swift in Sources */,
+				FA841FAF23DDCAFC00B73452 /* GameViewController.swift in Sources */,
+				FA841FA723DDCAFC00B73452 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FB923DDCAFE00B73452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA841FC223DDCAFE00B73452 /* Starlight_NightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA841FC423DDCAFE00B73452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA841FCD23DDCAFE00B73452 /* Starlight_NightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA841FBF23DDCAFE00B73452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA841FA223DDCAFC00B73452 /* Starlight Night */;
+			targetProxy = FA841FBE23DDCAFE00B73452 /* PBXContainerItemProxy */;
+		};
+		FA841FCA23DDCAFE00B73452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA841FA223DDCAFC00B73452 /* Starlight Night */;
+			targetProxy = FA841FC923DDCAFE00B73452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA841FB023DDCAFC00B73452 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA841FB123DDCAFC00B73452 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA841FB623DDCAFE00B73452 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA841FCF23DDCAFE00B73452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA841FD023DDCAFE00B73452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA841FD223DDCAFE00B73452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight Night/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA841FD323DDCAFE00B73452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight Night/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA841FD523DDCAFE00B73452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight NightTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-NightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starlight Night.app/Starlight Night";
+			};
+			name = Debug;
+		};
+		FA841FD623DDCAFE00B73452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight NightTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-NightTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Starlight Night.app/Starlight Night";
+			};
+			name = Release;
+		};
+		FA841FD823DDCAFE00B73452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight NightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-NightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Starlight Night";
+			};
+			name = Debug;
+		};
+		FA841FD923DDCAFE00B73452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJJWT3N6UE;
+				INFOPLIST_FILE = "Starlight NightUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "it-Business-Partner.Starlight-NightUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Starlight Night";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA841F9E23DDCAFC00B73452 /* Build configuration list for PBXProject "Starlight Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA841FCF23DDCAFE00B73452 /* Debug */,
+				FA841FD023DDCAFE00B73452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA841FD123DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA841FD223DDCAFE00B73452 /* Debug */,
+				FA841FD323DDCAFE00B73452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA841FD423DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight NightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA841FD523DDCAFE00B73452 /* Debug */,
+				FA841FD623DDCAFE00B73452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA841FD723DDCAFE00B73452 /* Build configuration list for PBXNativeTarget "Starlight NightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA841FD823DDCAFE00B73452 /* Debug */,
+				FA841FD923DDCAFE00B73452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA841F9B23DDCAFC00B73452 /* Project object */;
+}
