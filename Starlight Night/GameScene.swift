@@ -13,7 +13,8 @@ import CoreMotion
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     private var player: SKSpriteNode!
-    private var bacgraund: SKSpriteNode!
+    private var bacgraund: SKEmitterNode!
+    private var bacgraundImage: SKSpriteNode!
     private var scoreLable: SKLabelNode!
     private var score:Int = 0 {
         didSet {
@@ -28,7 +29,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     private var gameTimer:Timer!
 
-    private var alians = ["alian"]
+    private var alians = ["alian","alian2","alian3"]
     private let alianCategory:UInt32 = 0x1 << 1
     private let bulletCategory:UInt32 = 0x1 << 0
     private let aninmDuration:TimeInterval = 9
@@ -40,14 +41,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
 
     override func didMove(to view: SKView) {
-        bacgraund = SKSpriteNode(imageNamed: "space")
-        bacgraund.position = CGPoint(x: 0, y: 1472)
-        bacgraund.scale(to: CGSize(width: 1472, height: 1472))
+        bacgraund = SKEmitterNode(fileNamed: "Stars")
+        bacgraund.position = CGPoint(x: 0, y: 0)
+       // bacgraund.(to: CGSize(width: 1472, height: 1472))
+        bacgraund.zPosition = -1
         self.addChild(bacgraund)
+
+        bacgraundImage = SKSpriteNode(imageNamed: "space")
+        bacgraundImage.position = CGPoint(x: 0,y: 0)
+        bacgraundImage.size = CGSize(width: 1472, height: 1472)
+        bacgraundImage.zPosition = -2
+        self.addChild(bacgraundImage)
 
         player = SKSpriteNode(imageNamed: "starship")
         player.position = CGPoint(x: 0, y: 100 - (self.frame.size.height/2))
         player.scale(to: CGSize(width: 100, height: 100))
+        player.zPosition = 5
         self.addChild(player)
 
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
@@ -59,6 +68,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLable.fontSize = 36
         scoreLable.color = UIColor.white
         scoreLable.position = CGPoint(x: self.frame.size.width/2 - 150, y: self.frame.size.height/2 - 100)
+        scoreLable.zPosition = 1
         self.addChild(scoreLable)
 
         timeLable = SKLabelNode(text: "Время:  0")
@@ -66,6 +76,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         timeLable.fontSize = 36
         timeLable.color = UIColor.white
         timeLable.position = CGPoint(x: -self.frame.size.width/2 + 150, y: self.frame.size.height/2 - 100)
+        timeLable.zPosition = 1
         self.addChild(timeLable)
 
         gameTimer = Timer.scheduledTimer(timeInterval: timerAlian, target: self, selector: #selector(addAlian), userInfo: nil, repeats: true)
@@ -139,6 +150,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         alian.physicsBody?.categoryBitMask = alianCategory
         alian.physicsBody?.contactTestBitMask =  bulletCategory
         alian.physicsBody?.collisionBitMask = 0
+        alian.zPosition = 0
 
         self.addChild(alian)
 
@@ -162,6 +174,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bullet.physicsBody?.contactTestBitMask =  alianCategory
         bullet.physicsBody?.collisionBitMask = 0
         bullet.physicsBody?.usesPreciseCollisionDetection = true
+        bullet.zPosition = 0
 
         self.addChild(bullet)
 
@@ -185,6 +198,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
 
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
     }
 }

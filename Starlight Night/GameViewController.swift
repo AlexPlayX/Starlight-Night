@@ -10,12 +10,13 @@ import UIKit
 import SpriteKit
 import GameplayKit
 import WebKit
+import FBSDKCoreKit
+import WebKit
 
 class GameViewController: UIViewController, WKUIDelegate {
 
     var target = 1
     @IBOutlet weak var webView: UIWebView!
-   // @IBOutlet weak var buttonStart: UIButton!
 
    @IBOutlet weak var backButton: UIButton!
 
@@ -23,15 +24,9 @@ class GameViewController: UIViewController, WKUIDelegate {
        backButton.isHidden = true
         webView.isHidden = true
         if target == 1 {
-
-       // buttonStart.titleLabel!.text = "Restart"
         if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
-
-                // Present the scene
                 view.presentScene(scene)
             }
             view.ignoresSiblingOrder = true
@@ -49,38 +44,4 @@ class GameViewController: UIViewController, WKUIDelegate {
     @IBAction func backAction(_ sender: Any) {
         webView.goBack()
     }
-    @IBAction func pr1(_ sender: Any) {
-        print("1")
-    }
-    @IBAction func pr2(_ sender: Any) {
-        print("2")
-    }
-    @IBAction func pr3(_ sender: Any) {
-        print("3")
-    }
-    @IBAction func pr4(_ sender: Any) {
-        print("4")
-    }
-    @IBAction func pr5(_ sender: Any) {
-        print("5")
-    }
-
-
-
-//    override var shouldAutorotate: Bool {
-//        return true
-//    }
-
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        if UIDevice.current.userInterfaceIdiom == .phone {
-//            return .allButUpsideDown
-//        } else {
-//            return .all
-//        }
-//    }
-
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-//}
 }
