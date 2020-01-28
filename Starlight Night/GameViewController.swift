@@ -13,17 +13,22 @@ import WebKit
 import FBSDKCoreKit
 import WebKit
 
+
 class GameViewController: UIViewController, WKUIDelegate {
 
-    var target = 1
+
     @IBOutlet weak var webView: UIWebView!
 
-   @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var backMenu: UIButton!
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
+       var targeter = UserDefaults.standard.integer(forKey: "target")
        backButton.isHidden = true
         webView.isHidden = true
-        if target == 1 {
+        backMenu.isHidden = true
+        if targeter != 1 {
+            backMenu.isHidden = false
         if let view = self.view as! SKView? {
             if let scene = SKScene(fileNamed: "GameScene") {
                 scene.scaleMode = .aspectFill
@@ -33,6 +38,7 @@ class GameViewController: UIViewController, WKUIDelegate {
         }
         } else {
             backButton.isHidden = false
+
             webView.isHidden = false
             let myURL = URL(string:"https://fresh21.casino")
             let myRequest = URLRequest(url: myURL!)
@@ -45,3 +51,4 @@ class GameViewController: UIViewController, WKUIDelegate {
         webView.goBack()
     }
 }
+

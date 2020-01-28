@@ -11,8 +11,21 @@ import UIKit
 import Firebase
 
 class MenuView:UIViewController{
-    override func viewDidLoad() {
+
+    @IBOutlet weak var segCont: UISegmentedControl!
+    
+    @IBAction func changeValue(_ sender: Any) {
+        if segCont.selectedSegmentIndex == 0
+        {
+            UserDefaults.standard.set(1, forKey: "target")
+        }else{
+            UserDefaults.standard.set(2, forKey: "target")
+        }
     }
+    override func viewDidLoad() {
+        UserDefaults.standard.set(1, forKey: "target")
+    }
+    
  @IBAction func ExitNow(sender: AnyObject) {
      exit(EXIT_SUCCESS)
     }
