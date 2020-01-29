@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4ECA9D23E198DE002620FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4ECA9C23E198DE002620FE /* Main.storyboard */; };
 		FA770AF923E0919700839AC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA770AF823E0919700839AC2 /* GoogleService-Info.plist */; };
 		FA770AFB23E0983700839AC2 /* Stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA770AFA23E0983700839AC2 /* Stars.sks */; };
 		FA841FA723DDCAFC00B73452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FA623DDCAFC00B73452 /* AppDelegate.swift */; };
 		FA841FAB23DDCAFC00B73452 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FAA23DDCAFC00B73452 /* Actions.sks */; };
 		FA841FAD23DDCAFC00B73452 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FAC23DDCAFC00B73452 /* GameScene.swift */; };
 		FA841FAF23DDCAFC00B73452 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FAE23DDCAFC00B73452 /* GameViewController.swift */; };
-		FA841FB223DDCAFC00B73452 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB023DDCAFC00B73452 /* Main.storyboard */; };
 		FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB323DDCAFE00B73452 /* Assets.xcassets */; };
 		FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */; };
 		FA841FC223DDCAFE00B73452 /* Starlight_NightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FC123DDCAFE00B73452 /* Starlight_NightTests.swift */; };
@@ -45,6 +45,7 @@
 		19B206389EB991D38B3315F0 /* Pods-Starlight Night.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starlight Night.release.xcconfig"; path = "Pods/Target Support Files/Pods-Starlight Night/Pods-Starlight Night.release.xcconfig"; sourceTree = "<group>"; };
 		72E35C34AEFC0D5A20D1D6B0 /* Pods_Starlight_Night.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Starlight_Night.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAAA1B50D4B64FDA5895725 /* Pods-Starlight Night.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Starlight Night.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Starlight Night/Pods-Starlight Night.debug.xcconfig"; sourceTree = "<group>"; };
+		FA4ECA9C23E198DE002620FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA770AF823E0919700839AC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/Telegram Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA770AFA23E0983700839AC2 /* Stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Stars.sks; sourceTree = "<group>"; };
 		FA841FA323DDCAFC00B73452 /* Starlight Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starlight Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +53,6 @@
 		FA841FAA23DDCAFC00B73452 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		FA841FAC23DDCAFC00B73452 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		FA841FAE23DDCAFC00B73452 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		FA841FB123DDCAFC00B73452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA841FB323DDCAFE00B73452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA841FB623DDCAFE00B73452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA841FB823DDCAFE00B73452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,8 +141,8 @@
 				FA841FAC23DDCAFC00B73452 /* GameScene.swift */,
 				FA841FAE23DDCAFC00B73452 /* GameViewController.swift */,
 				FA841FE623DDF86C00B73452 /* MenuView.swift */,
-				FA841FB023DDCAFC00B73452 /* Main.storyboard */,
 				FA841FB323DDCAFE00B73452 /* Assets.xcassets */,
+				FA4ECA9C23E198DE002620FE /* Main.storyboard */,
 				FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */,
 				FA841FB823DDCAFE00B73452 /* Info.plist */,
 				FA770AF823E0919700839AC2 /* GoogleService-Info.plist */,
@@ -276,10 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA841FB223DDCAFC00B73452 /* Main.storyboard in Resources */,
 				FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */,
 				FA841FDD23DDD0C500B73452 /* Fire.sks in Resources */,
 				FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */,
+				FA4ECA9D23E198DE002620FE /* Main.storyboard in Resources */,
 				FA841FE123DDD48100B73452 /* GameScene.sks in Resources */,
 				FA770AFB23E0983700839AC2 /* Stars.sks in Resources */,
 				FA841FAB23DDCAFC00B73452 /* Actions.sks in Resources */,
@@ -394,14 +394,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA841FB023DDCAFC00B73452 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA841FB123DDCAFC00B73452 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -535,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJJWT3N6UE;
 				INFOPLIST_FILE = "Starlight Night/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,6 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJJWT3N6UE;
 				INFOPLIST_FILE = "Starlight Night/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

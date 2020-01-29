@@ -17,7 +17,7 @@ import WebKit
 class GameViewController: UIViewController, WKUIDelegate {
 
 
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var webView: WKWebView!
 
     @IBOutlet weak var backMenu: UIButton!
     @IBOutlet weak var backButton: UIButton!
@@ -26,7 +26,7 @@ class GameViewController: UIViewController, WKUIDelegate {
         dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
-       var targeter = UserDefaults.standard.integer(forKey: "target")
+        let targeter = UserDefaults.standard.integer(forKey: "target")
        backButton.isHidden = true
         webView.isHidden = true
         backMenu.isHidden = true
@@ -45,7 +45,7 @@ class GameViewController: UIViewController, WKUIDelegate {
             webView.isHidden = false
             let myURL = URL(string:"https://fresh21.casino")
             let myRequest = URLRequest(url: myURL!)
-            webView.loadRequest(myRequest)
+            webView.load(myRequest)
             super.viewDidLoad()
         }
     }

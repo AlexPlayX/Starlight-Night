@@ -55,7 +55,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
         player = SKSpriteNode(imageNamed: "starship")
         player.position = CGPoint(x: 0, y: 100 - (self.frame.size.height/2))
-        player.scale(to: CGSize(width: 100, height: 100))
+        if #available(iOS 10.0, *) {
+            player.scale(to: CGSize(width: 100, height: 100))
+        } else {
+            // Fallback on earlier versions
+        }
         player.zPosition = 5
         self.addChild(player)
 
@@ -142,7 +146,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let alian = SKSpriteNode(imageNamed: alians[0])
         let randomPos = GKRandomDistribution(lowestValue: Int(40-self.frame.size.width/2), highestValue: Int(self.frame.size.width/2-40))
         let pos = CGFloat(randomPos.nextInt())
-        alian.scale(to: CGSize(width: 80, height: 80))
+        if #available(iOS 10.0, *) {
+            alian.scale(to: CGSize(width: 80, height: 80))
+        } else {
+            // Fallback on earlier versions
+        }
         alian.position = CGPoint(x: pos, y: self.frame.size.height+100)
 
         alian.physicsBody = SKPhysicsBody(rectangleOf: alian.size)
@@ -164,7 +172,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     private func fireBullet(){
         let bullet = SKSpriteNode(imageNamed: "torpedo")
-        bullet.scale(to: CGSize(width: 60, height: 60))
+        if #available(iOS 10.0, *) {
+            bullet.scale(to: CGSize(width: 60, height: 60))
+        } else {
+            // Fallback on earlier versions
+        }
         bullet.position = player.position
         bullet.position.y += 10
 
