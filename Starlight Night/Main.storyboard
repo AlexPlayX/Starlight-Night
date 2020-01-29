@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="MenuView" customModule="Starlight_Night" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-Z0-F7J">
+                                <rect key="frame" x="0.0" y="-44" width="375" height="755"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb3-wP-irk">
+                                <rect key="frame" x="16" y="20" width="343" height="97.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Starlight Night">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="Copperplate-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="1" green="0.99997574090957642" blue="0.99999278783798218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KD5-SC-mUR">
+                                <rect key="frame" x="137" y="170" width="101" height="32"/>
+                                <color key="backgroundColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Ekm-hE-GXo"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Web"/>
+                                    <segment title="Game"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeValue:" destination="BV1-FR-VrT" eventType="valueChanged" id="mB7-GA-NBf"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcs-d7-x95">
+                                <rect key="frame" x="92" y="251.5" width="191" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="a1Z-se-Wna"/>
+                                </constraints>
+                                <state key="normal" image="menu_buttons_01_play"/>
+                                <connections>
+                                    <action selector="playGame:" destination="BV1-FR-VrT" eventType="touchDown" id="d0b-gx-aBn"/>
+                                    <segue destination="Dmr-FB-tMz" kind="presentation" identifier="gameSe" modalPresentationStyle="fullScreen" id="YWL-SU-7f5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcp-OO-eFf">
+                                <rect key="frame" x="92" y="369.5" width="191" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="38S-iT-doV"/>
+                                </constraints>
+                                <state key="normal" image="menu_buttons_03_exit"/>
+                                <connections>
+                                    <action selector="ExitNowWithSender:" destination="BV1-FR-VrT" eventType="touchUpInside" id="325-sr-30b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="KD5-SC-mUR" secondAttribute="centerX" id="8o0-L3-d7c"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="Rb3-wP-irk" secondAttribute="centerX" id="Iun-5Q-9uy"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="Zf9-Z0-F7J" secondAttribute="centerX" id="K6l-Zj-5MX"/>
+                            <constraint firstItem="Rb3-wP-irk" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="20" symbolic="YES" id="Lss-FY-NUt"/>
+                            <constraint firstItem="Zf9-Z0-F7J" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="UDk-Lq-D0f"/>
+                            <constraint firstItem="KD5-SC-mUR" firstAttribute="top" secondItem="Rb3-wP-irk" secondAttribute="bottom" constant="52.333333333333314" id="YOs-c6-d1N"/>
+                            <constraint firstItem="Zf9-Z0-F7J" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bhw-M0-gf9"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="top" secondItem="jcs-d7-x95" secondAttribute="bottom" constant="35" id="emH-HU-Cog"/>
+                            <constraint firstItem="KD5-SC-mUR" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="137" id="ghd-ii-omx"/>
+                            <constraint firstItem="Zf9-Z0-F7J" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" constant="-44" id="hpQ-Kl-kPN"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="92" id="ixg-6C-Ag2"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="jNL-gk-vq3"/>
+                            <constraint firstItem="Rb3-wP-irk" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="mMJ-QC-jiX"/>
+                            <constraint firstItem="jcs-d7-x95" firstAttribute="top" secondItem="KD5-SC-mUR" secondAttribute="bottom" constant="50.666666666666629" id="qKz-X2-mKc"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="trailing" secondItem="jcs-d7-x95" secondAttribute="trailing" id="sls-NX-bvI"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="bcp-OO-eFf" secondAttribute="bottom" constant="256" id="tNr-1f-qaQ"/>
+                            <constraint firstItem="bcp-OO-eFf" firstAttribute="leading" secondItem="jcs-d7-x95" secondAttribute="leading" id="xVM-Ua-iso"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tNr-1f-qaQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="segCont" destination="KD5-SC-mUR" id="ghI-7h-WIQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="106.79347826086958"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="zQX-hk-8nJ">
+            <objects>
+                <viewController id="Dmr-FB-tMz" customClass="GameViewController" customModule="Starlight_Night" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r70-4X-AWc" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPt-kt-eQQ">
+                                <rect key="frame" x="0.0" y="15" width="375" height="652"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3E-XR-kDE">
+                                <rect key="frame" x="142.5" y="0.0" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X3E-XR-kDE" secondAttribute="height" multiplier="1:1" id="DBU-Pf-kZs"/>
+                                    <constraint firstAttribute="width" constant="90" id="Med-28-jxB"/>
+                                    <constraint firstAttribute="height" constant="90" id="nkx-Su-K7l"/>
+                                </constraints>
+                                <state key="normal" image="menu_buttons_04_back"/>
+                                <connections>
+                                    <action selector="backButtonTouch:" destination="Dmr-FB-tMz" eventType="touchUpInside" id="u2X-sL-n5l"/>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="tcl-LZ-1cP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COe-Fm-MeI">
+                                <rect key="frame" x="335" y="15" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="COe-Fm-MeI" secondAttribute="height" multiplier="1:1" id="Pwv-O9-TAk"/>
+                                    <constraint firstAttribute="width" constant="40" id="gOM-Gu-5xT"/>
+                                    <constraint firstAttribute="height" constant="40" id="hDf-LU-M9n"/>
+                                </constraints>
+                                <state key="normal" image="menu_buttons_04_back"/>
+                                <connections>
+                                    <action selector="backAction:" destination="Dmr-FB-tMz" eventType="touchUpInside" id="bK4-OT-1je"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="COe-Fm-MeI" firstAttribute="trailing" secondItem="aFd-Dg-Mo6" secondAttribute="trailing" id="Dfs-kF-GnK"/>
+                            <constraint firstItem="ZPt-kt-eQQ" firstAttribute="centerX" secondItem="aFd-Dg-Mo6" secondAttribute="centerX" id="VVD-AS-vGF"/>
+                            <constraint firstItem="X3E-XR-kDE" firstAttribute="centerX" secondItem="ZPt-kt-eQQ" secondAttribute="centerX" id="cCD-Z0-RFL"/>
+                            <constraint firstItem="ZPt-kt-eQQ" firstAttribute="top" secondItem="COe-Fm-MeI" secondAttribute="top" id="cfa-Tw-gAU"/>
+                            <constraint firstItem="ZPt-kt-eQQ" firstAttribute="trailing" secondItem="COe-Fm-MeI" secondAttribute="trailing" id="h1W-j1-aO5"/>
+                            <constraint firstItem="COe-Fm-MeI" firstAttribute="top" secondItem="aFd-Dg-Mo6" secondAttribute="top" constant="15" id="oJF-Dd-wyn"/>
+                            <constraint firstItem="ZPt-kt-eQQ" firstAttribute="centerY" secondItem="aFd-Dg-Mo6" secondAttribute="centerY" constant="7.5" id="uYF-Je-fqu"/>
+                            <constraint firstItem="X3E-XR-kDE" firstAttribute="top" secondItem="aFd-Dg-Mo6" secondAttribute="top" id="yAm-1K-uPW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFd-Dg-Mo6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZXK-1A-abL"/>
+                    <connections>
+                        <outlet property="backButton" destination="COe-Fm-MeI" id="HwI-zr-ADA"/>
+                        <outlet property="backMenu" destination="X3E-XR-kDE" id="G66-O0-aKY"/>
+                        <outlet property="webView" destination="ZPt-kt-eQQ" id="wac-Sr-MFp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6j-Qj-wE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081.1594202898552" y="104.34782608695653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu_buttons_01_play" width="726" height="232"/>
+        <image name="menu_buttons_03_exit" width="726" height="232"/>
+        <image name="menu_buttons_04_back" width="232" height="232"/>
+        <image name="space" width="2048" height="4096"/>
+    </resources>
+</document>
