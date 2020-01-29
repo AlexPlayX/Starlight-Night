@@ -38,6 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="menu_buttons_01_play"/>
                                 <connections>
+                                    <action selector="playGame:" destination="BV1-FR-VrT" eventType="touchDown" id="d0b-gx-aBn"/>
                                     <segue destination="Dmr-FB-tMz" kind="presentation" identifier="gameSe" modalPresentationStyle="fullScreen" id="YWL-SU-7f5"/>
                                 </connections>
                             </button>
@@ -100,6 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="menu_buttons_04_back"/>
                                 <connections>
+                                    <action selector="backButtonTouch:" destination="Dmr-FB-tMz" eventType="touchUpInside" id="u2X-sL-n5l"/>
                                     <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="tcl-LZ-1cP"/>
                                 </connections>
                             </button>

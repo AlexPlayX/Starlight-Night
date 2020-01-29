@@ -14,6 +14,10 @@ class MenuView:UIViewController{
 
     @IBOutlet weak var segCont: UISegmentedControl!
     
+    @IBAction func playGame(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
     @IBAction func changeValue(_ sender: Any) {
         if segCont.selectedSegmentIndex == 0
         {
@@ -23,7 +27,11 @@ class MenuView:UIViewController{
         }
     }
     override func viewDidLoad() {
-        UserDefaults.standard.set(1, forKey: "target")
+        if UserDefaults.standard.integer(forKey: "target") == 1{
+            segCont.selectedSegmentIndex = 0
+        }else {
+            segCont.selectedSegmentIndex = 1
+        }
     }
     
  @IBAction func ExitNow(sender: AnyObject) {

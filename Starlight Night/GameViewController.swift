@@ -21,7 +21,10 @@ class GameViewController: UIViewController, WKUIDelegate {
 
     @IBOutlet weak var backMenu: UIButton!
     @IBOutlet weak var backButton: UIButton!
-
+    
+    @IBAction func backButtonTouch(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
        var targeter = UserDefaults.standard.integer(forKey: "target")
        backButton.isHidden = true
