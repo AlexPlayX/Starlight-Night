@@ -21,9 +21,9 @@ class MenuView:UIViewController{
     @IBAction func changeValue(_ sender: Any) {
         if segCont.selectedSegmentIndex == 0
         {
-            UserDefaults.standard.set(1, forKey: "target")
-        }else{
             UserDefaults.standard.set(2, forKey: "target")
+        }else{
+            UserDefaults.standard.set(1, forKey: "target")
         }
     }
     override func viewDidLoad() {
