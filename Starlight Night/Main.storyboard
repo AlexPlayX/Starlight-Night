@@ -39,8 +39,8 @@
                                     <constraint firstAttribute="height" constant="31" id="Ekm-hE-GXo"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Game"/>
-                                    <segment title="Casino"/>
+                                    <segment title="Игра"/>
+                                    <segment title="Сайт"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeValue:" destination="BV1-FR-VrT" eventType="valueChanged" id="mB7-GA-NBf"/>

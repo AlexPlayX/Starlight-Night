@@ -41,7 +41,7 @@ class GameViewController: UIViewController, WKUIDelegate {
         }
         } else {
             backButton.isHidden = false
-
+            backMenu.isHidden = false
             webView.isHidden = false
             let myURL = URL(string:"https://fresh21.casino")
             let myRequest = URLRequest(url: myURL!)
