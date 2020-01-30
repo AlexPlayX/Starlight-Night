@@ -9,50 +9,28 @@
 import Foundation
 import UIKit
 import Firebase
+import Pods_Starlight_Night
+import FirebaseDatabase
 
 class MenuView:UIViewController{
 
-    @IBOutlet weak var segCont: UISegmentedControl!
+    //@IBOutlet weak var segCont: UISegmentedControl!
     
     @IBAction func playGame(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
-    @IBAction func changeValue(_ sender: Any) {
-        if segCont.selectedSegmentIndex == 0
-        {
-            UserDefaults.standard.set(2, forKey: "target")
-        }else{
-            UserDefaults.standard.set(1, forKey: "target")
-        }
-    }
     override func viewDidLoad() {
-        if UserDefaults.standard.integer(forKey: "target") == 1{
-            segCont.selectedSegmentIndex = 0
-        }else {
-            segCont.selectedSegmentIndex = 1
-        }
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        ref.child("game").observeSingleEvent(of: .value , with:{ (snapshot) in
+                   print(snapshot.value as! Int)
+            UserDefaults.standard.set(snapshot.value as! Int,forKey:"target")
+                 }) { (error) in
+                   print(error.localizedDescription)
+               }
     }
     
  @IBAction func ExitNow(sender: AnyObject) {
      exit(EXIT_SUCCESS)
     }
-    //    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    //            AppLinkUtility.fetchDeferredAppLink { (url, error) in
-    //                if let error = error {
-    //                    print("Received error while fetching deferred app link %@", error)
-    //                }
-    //                if let url = url {
-    //                    if #available(iOS 10, *) {
-    //                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
-    //                        self.target = 2
-    //                        UserDefaults.setValue(2, forKey: "target")
-    //                    } else {
-    //                        UIApplication.shared.openURL(url)
-    //                    }
-    //                }
-    //            }
-    //            return true;
-    //    }
-
 }

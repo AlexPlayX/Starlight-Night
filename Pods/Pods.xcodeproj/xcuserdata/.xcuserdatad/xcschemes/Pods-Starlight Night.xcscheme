@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F457A93E68DA193C3210D9A05CA4338"
+               BlueprintIdentifier = "F9699BCCC054C3F8EB3E74D5C3F0C647"
                BlueprintName = "Pods-Starlight Night"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-Starlight Night.framework">

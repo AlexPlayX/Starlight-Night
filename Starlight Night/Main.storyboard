@@ -32,20 +32,6 @@
                                 </attributedString>
                                 <color key="highlightedColor" red="1" green="0.99997574090957642" blue="0.99999278783798218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KD5-SC-mUR">
-                                <rect key="frame" x="126" y="170" width="112" height="32"/>
-                                <color key="backgroundColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="Ekm-hE-GXo"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Игра"/>
-                                    <segment title="Сайт"/>
-                                </segments>
-                                <connections>
-                                    <action selector="changeValue:" destination="BV1-FR-VrT" eventType="valueChanged" id="mB7-GA-NBf"/>
-                                </connections>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcs-d7-x95">
                                 <rect key="frame" x="92" y="251.5" width="191" height="83"/>
                                 <constraints>
@@ -70,20 +56,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="KD5-SC-mUR" secondAttribute="centerX" constant="5.5" id="8o0-L3-d7c"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="Rb3-wP-irk" secondAttribute="centerX" id="Iun-5Q-9uy"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="Zf9-Z0-F7J" secondAttribute="centerX" id="K6l-Zj-5MX"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="bcp-OO-eFf" secondAttribute="bottom" constant="212.5" id="Li1-AM-bo1"/>
                             <constraint firstItem="Rb3-wP-irk" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="20" symbolic="YES" id="Lss-FY-NUt"/>
                             <constraint firstItem="Zf9-Z0-F7J" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="UDk-Lq-D0f"/>
-                            <constraint firstItem="KD5-SC-mUR" firstAttribute="top" secondItem="Rb3-wP-irk" secondAttribute="bottom" constant="52.333333333333314" id="YOs-c6-d1N"/>
                             <constraint firstItem="Zf9-Z0-F7J" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="bhw-M0-gf9"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="top" secondItem="jcs-d7-x95" secondAttribute="bottom" constant="35" id="emH-HU-Cog"/>
-                            <constraint firstItem="KD5-SC-mUR" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="126" id="ghd-ii-omx"/>
                             <constraint firstItem="Zf9-Z0-F7J" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="topMargin" constant="-44" id="hpQ-Kl-kPN"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="92" id="ixg-6C-Ag2"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="jNL-gk-vq3"/>
                             <constraint firstItem="Rb3-wP-irk" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="mMJ-QC-jiX"/>
-                            <constraint firstItem="jcs-d7-x95" firstAttribute="top" secondItem="KD5-SC-mUR" secondAttribute="bottom" constant="50.666666666666629" id="qKz-X2-mKc"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="trailing" secondItem="jcs-d7-x95" secondAttribute="trailing" id="sls-NX-bvI"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="bcp-OO-eFf" secondAttribute="bottom" constant="256" id="tNr-1f-qaQ"/>
                             <constraint firstItem="bcp-OO-eFf" firstAttribute="leading" secondItem="jcs-d7-x95" secondAttribute="leading" id="xVM-Ua-iso"/>
@@ -95,9 +78,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="segCont" destination="KD5-SC-mUR" id="ghI-7h-WIQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,7 +106,7 @@
                                     <constraint firstAttribute="width" constant="90" id="Med-28-jxB"/>
                                     <constraint firstAttribute="height" constant="90" id="nkx-Su-K7l"/>
                                 </constraints>
-                                <state key="normal" image="menu_buttons_04_back"/>
+                                <state key="normal" image="homeButton"/>
                                 <connections>
                                     <action selector="backButtonTouch:" destination="Dmr-FB-tMz" eventType="touchUpInside" id="u2X-sL-n5l"/>
                                     <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="tcl-LZ-1cP"/>
@@ -175,6 +155,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="homeButton" width="232" height="232"/>
         <image name="menu_buttons_01_play" width="726" height="232"/>
         <image name="menu_buttons_03_exit" width="726" height="232"/>
         <image name="menu_buttons_04_back" width="232" height="232"/>
