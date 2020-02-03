@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FA12B75823E314EC00E5D317 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA12B75723E314EC00E5D317 /* GoogleService-Info.plist */; };
+		FA12B75D23E817C100E5D317 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B75C23E817C100E5D317 /* Chartboost.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA12B76A23E81D6100E5D317 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76123E81D6000E5D317 /* UIKit.framework */; };
+		FA12B76B23E81D6100E5D317 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76223E81D6000E5D317 /* WebKit.framework */; };
+		FA12B76C23E81D6100E5D317 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76323E81D6000E5D317 /* StoreKit.framework */; };
+		FA12B76D23E81D6100E5D317 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76423E81D6000E5D317 /* CoreGraphics.framework */; };
+		FA12B76E23E81D6100E5D317 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76523E81D6100E5D317 /* AdSupport.framework */; };
+		FA12B76F23E81D6100E5D317 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76623E81D6100E5D317 /* Chartboost.framework */; };
+		FA12B77023E81D6100E5D317 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76723E81D6100E5D317 /* SystemConfiguration.framework */; };
+		FA12B77123E81D6100E5D317 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76823E81D6100E5D317 /* Foundation.framework */; };
+		FA12B77223E81D6100E5D317 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA12B76923E81D6100E5D317 /* AVFoundation.framework */; };
 		FA4ECA9D23E198DE002620FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4ECA9C23E198DE002620FE /* Main.storyboard */; };
 		FA770AFB23E0983700839AC2 /* Stars.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA770AFA23E0983700839AC2 /* Stars.sks */; };
 		FA841FA723DDCAFC00B73452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FA623DDCAFC00B73452 /* AppDelegate.swift */; };
@@ -19,6 +29,8 @@
 		FA841FDD23DDD0C500B73452 /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FDC23DDD0C500B73452 /* Fire.sks */; };
 		FA841FE123DDD48100B73452 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FE023DDD48000B73452 /* GameScene.sks */; };
 		FA841FE723DDF86C00B73452 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FE623DDF86C00B73452 /* MenuView.swift */; };
+		FAD7BCD523E838EF00E828FC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCD423E838EF00E828FC /* LaunchScreen.swift */; };
+		FAD7BCD723E8589600E828FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCD623E8589500E828FC /* Default-568h@2x.png */; };
 		FE85218B741F0EF0D1635131 /* Pods_Starlight_Night.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E35C34AEFC0D5A20D1D6B0 /* Pods_Starlight_Night.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +49,17 @@
 		FA10D4BE23E2F54600D79B0E /* GoogleDataTransportCCTSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransportCCTSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA10D4BF23E2F54600D79B0E /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA12B75723E314EC00E5D317 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA12B75C23E817C100E5D317 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		FA12B76123E81D6000E5D317 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA12B76223E81D6000E5D317 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		FA12B76323E81D6000E5D317 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FA12B76423E81D6000E5D317 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA12B76523E81D6100E5D317 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FA12B76623E81D6100E5D317 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chartboost.framework; path = "../../../Downloads/Chartboost-iOS-8.0.4.tar/Chartboost.framework"; sourceTree = "<group>"; };
+		FA12B76723E81D6100E5D317 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FA12B76823E81D6100E5D317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA12B76923E81D6100E5D317 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA12B77B23E82A5A00E5D317 /* Starlight Night-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Starlight Night-Bridging-Header.h"; sourceTree = "<group>"; };
 		FA4ECA9C23E198DE002620FE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FA770AFA23E0983700839AC2 /* Stars.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Stars.sks; sourceTree = "<group>"; };
 		FA841FA323DDCAFC00B73452 /* Starlight Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starlight Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +77,8 @@
 		FA841FDC23DDD0C500B73452 /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
 		FA841FE023DDD48000B73452 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FA841FE623DDF86C00B73452 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FAD7BCD423E838EF00E828FC /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		FAD7BCD623E8589500E828FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +86,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA12B76D23E81D6100E5D317 /* CoreGraphics.framework in Frameworks */,
+				FA12B77023E81D6100E5D317 /* SystemConfiguration.framework in Frameworks */,
+				FA12B77223E81D6100E5D317 /* AVFoundation.framework in Frameworks */,
+				FA12B76F23E81D6100E5D317 /* Chartboost.framework in Frameworks */,
 				FE85218B741F0EF0D1635131 /* Pods_Starlight_Night.framework in Frameworks */,
+				FA12B76A23E81D6100E5D317 /* UIKit.framework in Frameworks */,
+				FA12B77123E81D6100E5D317 /* Foundation.framework in Frameworks */,
+				FA12B76C23E81D6100E5D317 /* StoreKit.framework in Frameworks */,
+				FA12B76B23E81D6100E5D317 /* WebKit.framework in Frameworks */,
+				FA12B75D23E817C100E5D317 /* Chartboost.framework in Frameworks */,
+				FA12B76E23E81D6100E5D317 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +115,16 @@
 		6F6398D231F31AE757DFF56A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA12B76923E81D6100E5D317 /* AVFoundation.framework */,
+				FA12B75C23E817C100E5D317 /* Chartboost.framework */,
+				FA12B76523E81D6100E5D317 /* AdSupport.framework */,
+				FA12B76623E81D6100E5D317 /* Chartboost.framework */,
+				FA12B76423E81D6000E5D317 /* CoreGraphics.framework */,
+				FA12B76823E81D6100E5D317 /* Foundation.framework */,
+				FA12B76323E81D6000E5D317 /* StoreKit.framework */,
+				FA12B76723E81D6100E5D317 /* SystemConfiguration.framework */,
+				FA12B76123E81D6000E5D317 /* UIKit.framework */,
+				FA12B76223E81D6000E5D317 /* WebKit.framework */,
 				FA10D4B623E2F54600D79B0E /* FirebaseAuth.framework */,
 				FA10D4B723E2F54600D79B0E /* FirebaseCore.framework */,
 				FA10D4B823E2F54600D79B0E /* FirebaseCoreDiagnostics.framework */,
@@ -98,6 +143,7 @@
 		FA841F9A23DDCAFC00B73452 = {
 			isa = PBXGroup;
 			children = (
+				FAD7BCD623E8589500E828FC /* Default-568h@2x.png */,
 				FA841FA523DDCAFC00B73452 /* Starlight Night */,
 				FA841FC023DDCAFE00B73452 /* Starlight NightTests */,
 				FA841FCB23DDCAFE00B73452 /* Starlight NightUITests */,
@@ -124,6 +170,7 @@
 				FA841FAC23DDCAFC00B73452 /* GameScene.swift */,
 				FA841FAE23DDCAFC00B73452 /* GameViewController.swift */,
 				FA841FE623DDF86C00B73452 /* MenuView.swift */,
+				FAD7BCD423E838EF00E828FC /* LaunchScreen.swift */,
 				FA841FB323DDCAFE00B73452 /* Assets.xcassets */,
 				FA4ECA9C23E198DE002620FE /* Main.storyboard */,
 				FA841FB523DDCAFE00B73452 /* LaunchScreen.storyboard */,
@@ -131,6 +178,7 @@
 				FA12B75723E314EC00E5D317 /* GoogleService-Info.plist */,
 				FA841FDC23DDD0C500B73452 /* Fire.sks */,
 				FA770AFA23E0983700839AC2 /* Stars.sks */,
+				FA12B77B23E82A5A00E5D317 /* Starlight Night-Bridging-Header.h */,
 			);
 			path = "Starlight Night";
 			sourceTree = "<group>";
@@ -187,6 +235,7 @@
 				TargetAttributes = {
 					FA841FA223DDCAFC00B73452 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -215,6 +264,7 @@
 			files = (
 				FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */,
 				FA841FDD23DDD0C500B73452 /* Fire.sks in Resources */,
+				FAD7BCD723E8589600E828FC /* Default-568h@2x.png in Resources */,
 				FA12B75823E314EC00E5D317 /* GoogleService-Info.plist in Resources */,
 				FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */,
 				FA4ECA9D23E198DE002620FE /* Main.storyboard in Resources */,
@@ -282,6 +332,7 @@
 			files = (
 				FA841FAD23DDCAFC00B73452 /* GameScene.swift in Sources */,
 				FA841FE723DDF86C00B73452 /* MenuView.swift in Sources */,
+				FAD7BCD523E838EF00E828FC /* LaunchScreen.swift in Sources */,
 				FA841FAF23DDCAFC00B73452 /* GameViewController.swift in Sources */,
 				FA841FA723DDCAFC00B73452 /* AppDelegate.swift in Sources */,
 			);
@@ -420,19 +471,28 @@
 			baseConfigurationReference = CCAAA1B50D4B64FDA5895725 /* Pods-Starlight Night.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = R7GTJA6L5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Starlight Night/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.05;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itbpart.Starlight-Night-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Starlight Night/Starlight Night-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,19 +503,27 @@
 			baseConfigurationReference = 19B206389EB991D38B3315F0 /* Pods-Starlight Night.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = R7GTJA6L5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Starlight Night/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.05;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.itbpart.Starlight-Night-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Starlight Night/Starlight Night-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

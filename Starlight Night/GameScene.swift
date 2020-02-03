@@ -54,7 +54,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(bacgraundImage)
 
         player = SKSpriteNode(imageNamed: "starship")
-        player.position = CGPoint(x: 0, y: 100 - (self.frame.size.height/2))
+        player.position = CGPoint(x: 0, y: 250 - (self.frame.size.height/2))
         if #available(iOS 10.0, *) {
             player.scale(to: CGSize(width: 100, height: 100))
         } else {

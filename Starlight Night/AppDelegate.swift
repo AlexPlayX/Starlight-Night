@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Chartboost.start(withAppId: "5e300f42e52a120b35998b88", appSignature: "26b128a35e178b4e1d06cec69e47bf8841ba3b7a", delegate: nil)
         FirebaseApp.configure()
         ApplicationDelegate.shared.application(
               application,
@@ -26,11 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
-
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
