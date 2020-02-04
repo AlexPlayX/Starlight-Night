@@ -44,8 +44,6 @@ class MenuView:UIViewController{
                }
     }
 
-
-
     @IBAction func backAction(_ sender: Any) {
         webView.goBack()
     }
@@ -54,5 +52,5 @@ class MenuView:UIViewController{
  @IBAction func ExitNow(sender: AnyObject) {
      exit(EXIT_SUCCESS)
     }
-    
+
 }

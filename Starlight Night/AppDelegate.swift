@@ -9,10 +9,18 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
-
+import AppsFlyerLib
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate {
+    func onConversionDataSuccess(_ conversionInfo: [AnyHashable : Any]) {
+
+    }
+
+    func onConversionDataFail(_ error: Error) {
+
+    }
+
 
     var window: UIWindow?
 
@@ -24,7 +32,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
               application,
               didFinishLaunchingWithOptions: launchOptions
           )
-        return true
+        AppLinkUtility.fetchDeferredAppLink { (url, error) in
+                   if let error = error {
+                       print("Received error while fetching deferred app link %@", error)
+                   }
+                   if let url = url {
+                       if #available(iOS 11, *) {
+                           UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                       } else {
+                           UIApplication.shared.openURL(url)
+                       }
+                   }
+               }
+
+             AppsFlyerTracker.shared().appsFlyerDevKey = ""
+             AppsFlyerTracker.shared().appleAppID = "com.itbpart.Starlight-Night-Game"
+
+             AppsFlyerTracker.shared().delegate = self
+        //AppsFlyerTracker.shared().handleOpen(URL, options: launchOptions)
+             /* Set isDebug to true to see AppsFlyer debug logs */
+               return true;
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -38,6 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         AppEvents.activateApp()
+        AppsFlyerTracker.shared().trackAppLaunch()
     }
 }
 

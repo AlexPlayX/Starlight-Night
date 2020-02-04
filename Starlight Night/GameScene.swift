@@ -197,17 +197,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bullet.run(SKAction.sequence(action))
     }
 
-
-
-
-
-
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         fireBullet()
     }
-
-
-
 
     override func update(_ currentTime: TimeInterval) {
     }

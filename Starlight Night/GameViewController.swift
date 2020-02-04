@@ -16,9 +16,6 @@ import WebKit
 
 class GameViewController: UIViewController, WKUIDelegate {
 
-
- 
-
     @IBOutlet weak var backMenu: UIButton!
 
     

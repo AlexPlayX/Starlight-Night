@@ -30,7 +30,7 @@
 		FA841FE123DDD48100B73452 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA841FE023DDD48000B73452 /* GameScene.sks */; };
 		FA841FE723DDF86C00B73452 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA841FE623DDF86C00B73452 /* MenuView.swift */; };
 		FAD7BCD523E838EF00E828FC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCD423E838EF00E828FC /* LaunchScreen.swift */; };
-		FAD7BCD723E8589600E828FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCD623E8589500E828FC /* Default-568h@2x.png */; };
+		FAD7BCD923E957D000E828FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCD823E957CF00E828FC /* Default-568h@2x.png */; };
 		FE85218B741F0EF0D1635131 /* Pods_Starlight_Night.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E35C34AEFC0D5A20D1D6B0 /* Pods_Starlight_Night.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,7 @@
 		FA841FE023DDD48000B73452 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		FA841FE623DDF86C00B73452 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FAD7BCD423E838EF00E828FC /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		FAD7BCD623E8589500E828FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FAD7BCD823E957CF00E828FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +143,7 @@
 		FA841F9A23DDCAFC00B73452 = {
 			isa = PBXGroup;
 			children = (
-				FAD7BCD623E8589500E828FC /* Default-568h@2x.png */,
+				FAD7BCD823E957CF00E828FC /* Default-568h@2x.png */,
 				FA841FA523DDCAFC00B73452 /* Starlight Night */,
 				FA841FC023DDCAFE00B73452 /* Starlight NightTests */,
 				FA841FCB23DDCAFE00B73452 /* Starlight NightUITests */,
@@ -264,7 +264,7 @@
 			files = (
 				FA841FB423DDCAFE00B73452 /* Assets.xcassets in Resources */,
 				FA841FDD23DDD0C500B73452 /* Fire.sks in Resources */,
-				FAD7BCD723E8589600E828FC /* Default-568h@2x.png in Resources */,
+				FAD7BCD923E957D000E828FC /* Default-568h@2x.png in Resources */,
 				FA12B75823E314EC00E5D317 /* GoogleService-Info.plist in Resources */,
 				FA841FB723DDCAFE00B73452 /* LaunchScreen.storyboard in Resources */,
 				FA4ECA9D23E198DE002620FE /* Main.storyboard in Resources */,

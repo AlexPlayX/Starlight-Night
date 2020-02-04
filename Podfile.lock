@@ -1,4 +1,5 @@
 PODS:
+  - AppsFlyerFramework (5.1.0)
   - FacebookSDK (5.13.1):
     - FacebookSDK/CoreKit (= 5.13.1)
     - FacebookSDK/MarketingKit (= 5.13.1)
@@ -93,6 +94,7 @@ PODS:
   - Protobuf (3.11.2)
 
 DEPENDENCIES:
+  - AppsFlyerFramework
   - FacebookSDK
   - Firebase/Auth
   - Firebase/Database
@@ -100,6 +102,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AppsFlyerFramework
     - FacebookSDK
     - FBSDKCoreKit
     - FBSDKMarketingKit
@@ -122,6 +125,7 @@ SPEC REPOS:
     - Protobuf
 
 SPEC CHECKSUMS:
+  AppsFlyerFramework: b5e6d0d1718c445eeb151769e97246c00ae4628d
   FacebookSDK: d22350d1f3c143f43a311b12b488abd17e5f2033
   FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
   FBSDKMarketingKit: 6f7122d7d2b6286d61200467e4919d8d6677b2ee
@@ -143,6 +147,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: dd1aaea7140debfe4dd0683fb8ef208e527ae153
 
-PODFILE CHECKSUM: baca5cf091d5954d141c56fb31b5268bef2d4bb0
+PODFILE CHECKSUM: 31f0a165be71cb13105e6b5a3820d7ae3c51be99
 
 COCOAPODS: 1.5.2
