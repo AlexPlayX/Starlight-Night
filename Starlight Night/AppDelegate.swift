@@ -44,13 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate 
                        }
                    }
                }
-
-             AppsFlyerTracker.shared().appsFlyerDevKey = ""
-             AppsFlyerTracker.shared().appleAppID = "com.itbpart.Starlight-Night-Game"
+        if UserDefaults.standard.value(forKey: "AppsFlyerDevKey") != nil &&  UserDefaults.standard.value(forKey: "AppsFlyerID") != nil{
+        AppsFlyerTracker.shared().appsFlyerDevKey = String(UserDefaults.standard.value(forKey: "AppsFlyerDevKey") as! String)
+        AppsFlyerTracker.shared().appleAppID = String(UserDefaults.standard.value(forKey: "AppsFlyerID") as! String)
+        }
 
              AppsFlyerTracker.shared().delegate = self
-        //AppsFlyerTracker.shared().handleOpen(URL, options: launchOptions)
-             /* Set isDebug to true to see AppsFlyer debug logs */
                return true;
     }
 

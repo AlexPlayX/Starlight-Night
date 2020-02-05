@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" constant="40" id="gOM-Gu-5xT"/>
                                     <constraint firstAttribute="height" constant="40" id="hDf-LU-M9n"/>
                                 </constraints>
-                                <state key="normal" image="menu_buttons_04_back"/>
+                                <state key="normal" image="menu_buttons_05_back"/>
                                 <connections>
                                     <action selector="backAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="j6c-9o-DNm"/>
                                 </connections>
@@ -130,7 +130,7 @@
                                     <constraint firstAttribute="width" constant="90" id="Med-28-jxB"/>
                                     <constraint firstAttribute="height" constant="90" id="nkx-Su-K7l"/>
                                 </constraints>
-                                <state key="normal" image="homeButton"/>
+                                <state key="normal" image="menu_buttons_06_home"/>
                                 <connections>
                                     <action selector="backButtonTouch:" destination="Dmr-FB-tMz" eventType="touchUpInside" id="u2X-sL-n5l"/>
                                     <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="tcl-LZ-1cP"/>
@@ -159,10 +159,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="homeButton" width="232" height="232"/>
         <image name="menu_buttons_01_play" width="726" height="232"/>
         <image name="menu_buttons_03_exit" width="726" height="232"/>
-        <image name="menu_buttons_04_back" width="232" height="232"/>
+        <image name="menu_buttons_05_back" width="232" height="232"/>
+        <image name="menu_buttons_06_home" width="232" height="232"/>
         <image name="space" width="2048" height="4096"/>
     </resources>
 </document>

@@ -28,12 +28,12 @@ class MenuView:UIViewController{
         var ref: DatabaseReference!
         ref = Database.database().reference()
         ref.child("game").observeSingleEvent(of: .value , with:{ (snapshot) in
-                   print(snapshot.value as! Int)
-            UserDefaults.standard.set(snapshot.value as! Int,forKey:"target")
-             if snapshot.value as! Int == 1 {
+                   print(snapshot.value as! String)
+           // UserDefaults.standard.set(snapshot.value as! Int,forKey:"target")
+             if snapshot.value as! String != "" {
                 self.webView.isHidden = false
                 self.backButton.isHidden = false
-                 let myURL = URL(string:"https://fresh21.casino")
+                 let myURL = URL(string:snapshot.value as! String )
                  let myRequest = URLRequest(url: myURL!)
                 self.webView.load(myRequest)
                  super.viewDidLoad()
@@ -42,6 +42,19 @@ class MenuView:UIViewController{
                  }) { (error) in
                    print(error.localizedDescription)
                }
+
+        ref.child("appFlyDevKey").observeSingleEvent(of: .value , with:{ (snapshot) in
+                  UserDefaults.standard.set(snapshot.value as! String,forKey:"AppsFlyerDevKey")
+
+                   }) { (error) in
+                         print(error.localizedDescription)
+                     }
+        ref.child("appFlyID").observeSingleEvent(of: .value , with:{ (snapshot) in
+                         UserDefaults.standard.set(snapshot.value as! String,forKey:"AppsFlyerID")
+
+                          }) { (error) in
+                                print(error.localizedDescription)
+                            }
     }
 
     @IBAction func backAction(_ sender: Any) {
