@@ -15,10 +15,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private var player: SKSpriteNode!
     private var bacgraund: SKEmitterNode!
     private var bacgraundImage: SKSpriteNode!
+    private var coinImage: SKSpriteNode!
     private var scoreLable: SKLabelNode!
     private var score:Int = 0 {
         didSet {
-            scoreLable.text = "Счёт :  \(score)"
+            scoreLable.text = "  : \(score)"
         }
     }
     private var timeLable: SKLabelNode!
@@ -67,14 +68,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.contactDelegate = self
 
 
-        scoreLable = SKLabelNode(text: "Счёт:  0")
+        scoreLable = SKLabelNode(text: "  : 0")
         scoreLable.fontName = "AmericanTypewriter-Bold"
         scoreLable.fontSize = 36
         scoreLable.color = UIColor.white
-        scoreLable.position = CGPoint(x: self.frame.size.width/2 - 150, y: self.frame.size.height/2 - 100)
+        scoreLable.position = CGPoint(x: self.frame.size.width/2 - 100, y: self.frame.size.height/2 - 100)
         scoreLable.zPosition = 1
         self.addChild(scoreLable)
-
+        
+        coinImage = SKSpriteNode(imageNamed: "coin")
+        coinImage.position = CGPoint(x: self.frame.size.width/2 - 150, y: self.frame.size.height/2 - 90)
+        coinImage.size = CGSize(width: 50, height: 50)
+        self.addChild(coinImage)
         timeLable = SKLabelNode(text: "Время:  0")
         timeLable.fontName = "AmericanTypewriter-Bold"
         timeLable.fontSize = 36
